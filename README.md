@@ -1,1 +1,0 @@
-# 2022-08_Perguntas_Respostas_Front-end
