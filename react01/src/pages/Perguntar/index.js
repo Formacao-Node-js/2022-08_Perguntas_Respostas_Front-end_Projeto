@@ -1,11 +1,11 @@
 import React from "react";
-import Container from "../../components/Container";
+import { Container } from "../../style";
 
 const Perguntar = () => {
   return (
     <Container>
-      <p> teste 2 </p>
-    </Container>
+      <h1> FRONTEND RODANDO </h1>
+      </Container>
   );
 };
 
