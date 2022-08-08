@@ -1,16 +1,16 @@
 import React from "react";
-import { FormModel, TextArea, Label } from "./style";
+import { FormModel, TextArea, Label, Card, Input } from "./style";
 
 const Form = () => {
   return (
-    <>
+    <Card>
       <FormModel>
         <Label>Título</Label>
-        <input type="text" name="name" placeholder="teste" />
+        <Input type="text" name="name" placeholder="Título da pergunta" />
         <Label>Descrição</Label>
-        <TextArea />
+        <TextArea placeholder="Descreva aqui sua duvida para que alguém possa te ajudar" />
       </FormModel>
-    </>
+    </Card>
   );
 };
 

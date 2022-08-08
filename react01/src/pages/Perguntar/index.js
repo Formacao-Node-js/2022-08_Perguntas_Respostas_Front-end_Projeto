@@ -1,11 +1,16 @@
 import React from "react";
+import Form from "../../components/Form";
+import Header from "../../components/Header";
 import { Container } from "../../style";
 
 const Perguntar = () => {
   return (
-    <Container>
-      <h1> FRONTEND RODANDO </h1>
+    <>
+      <Header />
+      <Container>
+        <Form />
       </Container>
+    </>
   );
 };
 

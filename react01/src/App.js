@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
+import Perguntar from "./pages/Perguntar";
 
 function App() {
   return (
     <div style={{ height: "100%" }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Header />}></Route>
+          <Route path="/" element={<Perguntar />}></Route>
         </Routes>
       </Router>
     </div>
