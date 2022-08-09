@@ -4,7 +4,7 @@ export const Card = styled.div`
   border: 2px solid black;
   max-width: 35em;
   width: 35em;
-  height: 23em;
+  height: 26em;
   margin: 3% 0 3% 0;
   display: flex;
   box-sizing: border-box;
