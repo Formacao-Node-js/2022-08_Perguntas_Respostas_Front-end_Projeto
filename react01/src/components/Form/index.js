@@ -13,7 +13,7 @@ const Form = () => {
         <Perguntar
           onClick={(e) => {
             console.log("teste");
-            e.preventDefault(); // impede que a página atualize
+            e.preventDefault(); // previni/impede um evento padrão | nesse caso, impede que a página atualize
           }}
         />
       </FormModel>
