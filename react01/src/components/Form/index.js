@@ -1,19 +1,22 @@
 import React from "react";
 import Perguntar from "../Button/Perguntar";
-import { FormModel, TextArea, Label, Card, Input } from "./style";
+import { Card, FormModel, Input, Label, TextArea } from "./style";
 
 const Form = () => {
   return (
     <Card>
       <FormModel>
         <Label>Título</Label>
-        <Input type="text" name="name" placeholder="Título da pergunta" />
+        <Input type="text" name="titulo" placeholder="Título da pergunta" />
         <Label>Descrição</Label>
-        <TextArea placeholder="Descreva aqui sua duvida para que alguém possa te ajudar" />
+        <TextArea
+          name="descricao"
+          placeholder="Descreva aqui sua duvida para que alguém possa te ajudar"
+        />
         <Perguntar
           onClick={(e) => {
             console.log("teste");
-            e.preventDefault(); // previni/impede um evento padrão | nesse caso, impede que a página atualize
+            e.preventDefault(); // previne/impede um evento padrão | nesse caso, impede que a página atualize
           }}
         />
       </FormModel>
