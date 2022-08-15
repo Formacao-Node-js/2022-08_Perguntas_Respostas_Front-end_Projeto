@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Geral from "./pages/Geral";
 import Perguntar from "./pages/Perguntar";
+import PerguntaId from './pages/PerguntaId'
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         </Routes>
         <Routes>
           <Route path="/geral" element={<Geral />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/perguntaselecionada" element={<PerguntaId/>}></Route>
         </Routes>
       </Router>
     </div>

@@ -27,6 +27,6 @@ export const DescriptionDiv = styled.div`
 
 export const BotaoDiv = styled.div`
 display: flex;
-margin: 2%;
+margin-top: 7%;
 align-self: center;
 `
