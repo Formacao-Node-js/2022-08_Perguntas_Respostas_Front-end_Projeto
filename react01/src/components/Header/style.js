@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   max-width: 100%;
   min-width: 563px;
   min-height: 10%;

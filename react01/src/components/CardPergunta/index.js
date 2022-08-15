@@ -1,10 +1,16 @@
 import React from "react";
-import { Card } from "./style";
-const CardPergunta = () => {
+import Botao from "../Button";
+import { Card, DescriptionDiv, BotaoDiv } from "./style";
+
+const CardPergunta = (props) => {
   return (
     <>
       <Card>
-        <h1> eiiiii </h1>
+        <h2> {props.titulo}</h2>
+        <DescriptionDiv>{props.descricao}</DescriptionDiv>
+        <BotaoDiv>
+          <Botao nome="Responder" on />
+        </BotaoDiv>
       </Card>
     </>
   );

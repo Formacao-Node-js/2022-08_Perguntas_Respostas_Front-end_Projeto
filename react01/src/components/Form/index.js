@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import api from "../../service/api";
-import Perguntar from "../Button/Perguntar";
+import Botao from "../Button";
 import { Card, FormModel, Input, Label, TextArea } from "./style";
+
+// const path = window.location.pathname = '/geral'
 
 const Form = () => {
   const [pergunta, setPergunta] = useState({
@@ -36,13 +38,14 @@ const Form = () => {
           name="descricao"
           placeholder="Descreva aqui sua duvida para que alguém possa te ajudar"
         />
-        <Perguntar
+        <Botao
           onClick={(e) => {
             api
               .post("/salvarpergunta", pergunta)
               .then((response) => alert(response.data));
             // e.preventDefault();
           }}
+          nome="Perguntar"
         />
       </FormModel>
     </Card>
