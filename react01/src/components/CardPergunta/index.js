@@ -1,14 +1,12 @@
 import React from "react";
-import Botao from "../Button";
-import { Card, DescriptionDiv, BotaoDiv } from "./style";
 import { useNavigate } from "react-router";
-import api from "../../service/api";
+import Botao from "../Button";
+import { BotaoDiv, Card, DescriptionDiv } from "./style";
 
 const CardPergunta = (props) => {
   let navigate = useNavigate();
   function handleClick() {
     navigate("/");
-  
   }
   return (
     <>

@@ -3,7 +3,9 @@ import { Button } from "./style";
 export const Botao = (props) => {
   return (
     <>
-      <Button onClick={props.onClick}>{props.nome}</Button>
+      <Button id={props.id} onClick={props.onClick}>
+        {props.nome}
+      </Button>
     </>
   );
 };
