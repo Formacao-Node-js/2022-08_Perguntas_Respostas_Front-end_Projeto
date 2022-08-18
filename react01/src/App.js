@@ -14,7 +14,7 @@ function App() {
           <Route path="/geral" element={<Geral />}></Route>
 
           <Route
-            path="/perguntaselecionada/:id"
+            path="/pergunta/:id"
             element={<PerguntaId />}
           ></Route>
         </Routes>

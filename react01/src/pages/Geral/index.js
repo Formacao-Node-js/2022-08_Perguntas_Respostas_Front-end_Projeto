@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
 import CardPergunta from "../../components/CardPergunta";
 import Header from "../../components/Header";
-import { Painel } from "../../style";
 import api from "../../service/api";
+import { Painel } from "../../style";
 import { SubHeader } from "./style";
 
 const Geral = () => {
@@ -16,6 +17,8 @@ const Geral = () => {
   useEffect(() => {
     getData();
   }, []);
+
+  let navigate = useNavigate();
 
   return (
     <>
@@ -32,6 +35,8 @@ const Geral = () => {
               key={k}
               descricao={res.descricao}
               titulo={res.titulo}
+              nome="Visualizar"
+              onClick={() => navigate(`/pergunta/${res.id}`)}
             />
           );
         })}
