@@ -9,9 +9,9 @@ function App() {
     <div style={{ height: "100%" }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Perguntar />}></Route>
+          <Route path="/pergunta" element={<Perguntar />}></Route>
 
-          <Route path="/geral" element={<Geral />}></Route>
+          <Route path="/" element={<Geral />}></Route>
 
           <Route
             path="/pergunta/:id"

@@ -24,7 +24,7 @@ const Geral = () => {
     <>
       <Header />
       <SubHeader>
-        <a id="link" href="/">
+        <a id="link" href="/pergunta">
           <h1>Faça uma pergunta</h1>
         </a>
       </SubHeader>
