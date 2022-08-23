@@ -22,7 +22,7 @@ const PerguntaId = (props) => {
   }, [id]);
 
   useEffect(() => {
-    api.get(`/resposta/1`).then((res) => {
+    api.get(`/resposta/${id}`).then((res) => {
       setDataRes(res.dataRes);
       console.log(dataRes, "<-----------------");
     });
