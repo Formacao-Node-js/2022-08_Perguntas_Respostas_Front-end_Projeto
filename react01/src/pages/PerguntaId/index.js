@@ -23,8 +23,8 @@ const PerguntaId = (props) => {
 
   useEffect(() => {
     api.get(`/resposta/${id}`).then((res) => {
-      setDataRes(res.dataRes);
-      console.log(dataRes, "<-----------------");
+      setDataRes(res.data);
+      console.log(dataRes);
     });
   }, []);
 
@@ -49,9 +49,9 @@ const PerguntaId = (props) => {
             <h4>" {data.descricao} "</h4>
           </DescricaoDiv>
         </Card>
-        <Card>
-          <h1>{dataRes}</h1>
-        </Card>
+        {dataRes.map((dados, k) => {
+          return <Card key={k}>{dados.corpo}</Card>;
+        })}
 
         <form>
           <label>Sua resposta</label>
@@ -66,6 +66,7 @@ const PerguntaId = (props) => {
               api
                 .post("/salvarresposta", resposta)
                 .then((res) => alert(res.data));
+              e.preventDefault();
             }}
           />
         </form>
