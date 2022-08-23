@@ -62,11 +62,8 @@ const PerguntaId = (props) => {
           />
           <Botao
             nome="Enviar"
-            onClick={(e) => {
-              api
-                .post("/salvarresposta", resposta)
-                .then((res) => alert(res.data));
-              e.preventDefault();
+            onClick={async (e) => {
+              await api.post("/salvarresposta", resposta);
             }}
           />
         </form>
